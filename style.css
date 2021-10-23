@@ -19,7 +19,7 @@ body {
   background-color: var(--very-dark-blue);
   border: 1px solid red;
   font-size: 15px;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +30,7 @@ body {
 
 .card {
   background-color: var(--dark-desaturated-blue);
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: 'Inter', sans-serif;
   height: 700px;
   overflow: hidden;
@@ -43,7 +43,8 @@ body {
 }
 
 .card__image {
-  /* filter: brightness(2); */
+  filter: grayscale(100%) brightness(50%) sepia(60%) hue-rotate(-130deg)
+    saturate(550%) contrast(0.8);
   width: 100%;
 }
 
@@ -61,29 +62,33 @@ body {
 
 .card__heading__description {
   color: var(--slightly-transparent-white-main-paragraph);
+  font-size: 14px;
   line-height: 1.75;
-  margin-top: 0;
+  margin: 0;
   width: 28ch;
 }
 
 /* Stats */
 
 .stats {
-  border: 1px solid red;
   color: var(--slightly-transparent-white-stat-headings);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
-  margin-top: 2rem;
-  display: flex;
+  margin-top: 0.5rem;
 }
 
 .stats__heading {
   color: var(--slightly-transparent-white-stat-headings);
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding: 0.5rem;
 }
 
 .stats__heading--highlight {
   color: var(--white);
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -95,6 +100,7 @@ body {
   margin-top: 1rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 80%);
 }
