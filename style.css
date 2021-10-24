@@ -17,7 +17,6 @@
 
 body {
   background-color: var(--very-dark-blue);
-  border: 1px solid red;
   font-size: 15px;
   height: 100vh;
   display: flex;
